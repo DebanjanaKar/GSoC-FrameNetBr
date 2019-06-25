@@ -4,7 +4,7 @@ This repository contains code for evaluating the semantic similarity between a s
 
 #### Pre-requisites :
 1. `Linux` system
-2. `Anaconda 3.x`
+2. `Anaconda, Python 3.x`
 
 #### Instructions :
 1. Create an environment in your local server using the given requirements-gsoc19.txt with the following command :
@@ -14,7 +14,7 @@ This repository contains code for evaluating the semantic similarity between a s
 3. In that environment, open jupyter notebook to access the given `.ipynb` files in this repo
 4. Run the **`xml_parsing.ipynb`** script first.
 
-Since the size of the pretrained embeddings are huge, storage of these resources in local machines and running the next script can be a problem. Hence it is recommended to skip steps 4 & 5. The output of this script which will be required in the execution of the following script is already provided in the `/resources` folder of this repo.
+Since the size of the pretrained embeddings used in the next script **`create_feat_embeddings.ipynb`** are huge, storage of these resources in local machines and running this script can be a problem. Hence it is recommended to skip steps 5 & 6. The outputs of steps 5 & 6 which will be required in the execution of the last script is already provided in the `/resources` folder of this repo.
 
 5. The next script **`create_feat_embeddings.ipynb`**, uses FastText pretrained embeddings to create dictionaries of embeddings for the different features used to evaluate the semantic similarity. For the pretrained embeddings, download the `.bin` files for the required languages from https://fasttext.cc/docs/en/crawl-vectors.html .
 
