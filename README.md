@@ -37,8 +37,8 @@ This will give a `.bin` file of the oov words.
 
 8. The script **`similarity.ipynb`** evaluates the semantic similarity on the basis of different features like FrameNet v.1.7 frames, etc. This script is the last script you need to run to produce results and graphical visualisations. The already computed results and visualisations can be found inside the folder `\results`of this repo.
 
-9. The script **score_generator.ipynb** finds the weighted average scores and brings together all the features of the model in a format suitable for the regression model.
+9. The script **`score_generator.ipynb`** finds the weighted average scores and brings together all the features of the model in a format suitable for the regression model.
 
-10. The last script **regressor.ipynb** contains the regression model and produces the desired results.
+10. The last script **`regressor.ipynb`** contains the regression model and produces the desired results.
 
 
