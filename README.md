@@ -7,8 +7,8 @@ This repository contains code for evaluating the semantic similarity between a s
 2. `Anaconda, Python 3.x`
 
 #### Instructions :
-1. Create an environment in your local server using the given requirements-gsoc19.txt with the following command :
-`conda create --name <env> --file requirements-gsoc19.txt`
+1. Create an environment in your local server using the given requirements-gsoc1-v2.txt with the following command :
+`conda create --name <env> --file requirements-gsoc1-v2.txt`
 2. Activate the environment using :
 `conda activate <env>`
 3. In that environment, open jupyter notebook to access the given `.ipynb` files in this repo
@@ -33,8 +33,12 @@ $ cat oov_words_en.txt | ./fasttext print-word-vectors cc.en.300.bin >> en_oov.b
 ```
 This will give a `.bin` file of the oov words.
 
-7. The last script **`similarity.ipynb`** evaluates the semantic similarity on the basis of different features like FrameNet v.1.7 frames, etc. This script is the last script you need to run to produce results and graphical visualisations. The already computed results and visualisations can be found inside the folder `\results`of this repo.
+7. The above script uses Google's Universal Sentence Encoder to obtain sentence embeddings. Although the dependencies should be installed by the requirements file, in case of any problem, please install Tensorflow v.1.12 explicitly and follow the instructions given in this link https://tfhub.dev/google/universal-sentence-encoder-multilingual/1
 
+8. The script **`similarity.ipynb`** evaluates the semantic similarity on the basis of different features like FrameNet v.1.7 frames, etc. This script is the last script you need to run to produce results and graphical visualisations. The already computed results and visualisations can be found inside the folder `\results`of this repo.
 
+9. The script **score_generator.ipynb** finds the weighted average scores and brings together all the features of the model in a format suitable for the regression model.
+
+10. The last script **regressor.ipynb** contains the regression model and produces the desired results.
 
 
