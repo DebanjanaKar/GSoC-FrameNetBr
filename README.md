@@ -17,7 +17,7 @@ The first line of the yml file sets the new environment's name.
 
 Since the size of the binary files of the pretrained embeddings used in the next script **`create_feat_embeddings.ipynb`** are huge, storage of these resources in local machines and running this script can be a problem. Hence it is recommended to skip steps 5, 6 & 7. The outputs of steps 5 & 6 which will be required in the execution of some scripts later is already provided in the `/resources` folder of this repo.
 
-5. The next script **`create_feat_embeddings.ipynb`**, uses FastText pretrained embeddings to create dictionaries of embeddings for the different features used to evaluate the semantic similarity. For the pretrained embeddings, download the `.bin` files for the required languages from https://fasttext.cc/docs/en/crawl-vectors.html .
+5. The next script **`create_feat_embeddings.ipynb`**, uses FastText pretrained embeddings to create dictionaries of embeddings for the different features used to evaluate the semantic similarity. For the pretrained embeddings, download the `.bin` files for the required languages from this [website](https://fasttext.cc/docs/en/crawl-vectors.html).
 
 6. The above script outputs `.txt` files which stores the out-of-vocabulary(oov) words for each respective language. To compute the embeddings for the oov words in each language,
 * Install FastText in your environment folder using : 
@@ -34,18 +34,18 @@ $ cat oov_words_en.txt | ./fasttext print-word-vectors cc.en.300.bin >> en_oov.b
 ```
 This will give a `.bin` file of the oov words.
 
-7. The above script uses Google's Universal Sentence Encoder to obtain sentence embeddings. Although the dependencies should be installed by the requirements file, in case of any problem, please install Tensorflow v.1.12 explicitly and follow the instructions given in this link https://tfhub.dev/google/universal-sentence-encoder-multilingual/1
+7. The above script uses Google's Universal Sentence Encoder to obtain sentence embeddings. Although the dependencies should be installed by the requirements file, in case of any problem, please install Tensorflow v.1.12 explicitly and follow the instructions given in this [link](https://tfhub.dev/google/universal-sentence-encoder-multilingual/1)
 
-8. The script **`bert-embeddings.ipynb`** uses pretrained cased multilingual BERT embeddings[https://github.com/google-research/bert] to generate embeddings for lexical units and sentences. The pytorch interface for BERT by Hugging Face has been used to access and experiment with the pretrained embeddings. It contains a method which maps the lexical units to the actual words in the sentences and maps with an error of < 5%. It auto-generates a resource file called `bert_embeddings.pickle` which contains all the required embeddings, ready for use.
+8. The script **`bert-embeddings.ipynb`** uses pretrained cased multilingual [BERT embeddings](https://github.com/google-research/bert) to generate embeddings for lexical units and sentences. The pytorch interface for BERT by Hugging Face has been used to access and experiment with the pretrained embeddings. It contains a method which maps the lexical units to the actual words in the sentences and maps with an error of < 5%. It auto-generates a resource file called `bert_embeddings.pickle` which contains all the required embeddings, ready for use.
 
-9. The script **`similarity.ipynb`** evaluates the semantic similarity on the basis of different features like FrameNet v.1.7 frames, etc. The already computed results and visualisations can be found inside the folder `\results`of this repo.
+9. The script **`similarity.ipynb`** evaluates the semantic similarity on the basis of different features like FrameNet v.1.7 frames, etc. The already computed results and visualisations can be found inside the folder `/results`of this repo.
 
 10. The script **`score_generator.ipynb`** finds the weighted average scores and brings together all the features of the model in a format suitable for the regression model.
 
 11. Baseline models have been experimented with in the script **`baselines.ipynb`** and semi supervised models, in the script **`iterative-learning.ipynb`** .
 
-Please run the scripts *in the order they have been presented* here.  Have a look at **`TaskChecklist.md`** to have an idea of the workflow and the tasks that were/weren't accomplished during the period.  
+Please run the scripts *in the order they have been presented* here.  Have a look at [**`TaskChecklist.md`** ](https://github.com/DebanjanaKar/GSoC-FrameNetBr/blob/master/TaskChecklist.md) to have an idea of the workflow and the tasks that were/weren't accomplished during the period.  
   
-For a more detailed explanation of the project, please visit : https://medium.com/@debanjana.kar/frame-based-metric-for-automatic-machine-translation-evaluation-my-journey-in-gsoc-2019-5749f0d21b74?source=friends_link&sk=1eec274567ff753a9704cb785ccb1231
+For a more detailed explanation of the project, please visit this [blog post](https://medium.com/@debanjana.kar/frame-based-metric-for-automatic-machine-translation-evaluation-my-journey-in-gsoc-2019-5749f0d21b74?source=friends_link&sk=1eec274567ff753a9704cb785ccb1231).
 
 
