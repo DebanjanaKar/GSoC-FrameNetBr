@@ -1,0 +1,8 @@
+Label ......... Train Score, Test Score
+
+61 +ve sentence pairs(combined) + fasttext ......................................... 0.1175, 0.1675
+61 +ve sentence pairs(combined) + bert ......................................... 0.0963, 0.1528
+31 sentence pairs + 10 neg sentence pairs + fasttext + ende ......................................... 0.2384, 0.5652
+31 sentence pairs + fasttext + ende ......................................... 0.1336, 0.1891
+30 sentence pairs + 10 neg sentence pairs + fasttext + enpt ......................................... 0.2702, 0.5903
+30 sentence pairs + fasttext + enpt ......................................... 0.0687, 0.2011

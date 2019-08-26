@@ -1,0 +1,7 @@
+Test Instance Errors being reported.
+Model ......... Error with semi supervised approach, Error without using semi supervised approach
+
+Linear Regressor ............................................... 0.1528, 0.1528
+Support Vector Regressor ............................................... 0.1579, 0.1579
+Multi Layer Perceptron Regressor ............................................... 0.1677, 0.1684
+Random Forest Regressor ............................................... 0.1669, 0.1958
