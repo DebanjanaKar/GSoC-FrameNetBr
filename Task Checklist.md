@@ -1,0 +1,22 @@
+These are the tasks that had been mentioned as deliverables in the final proposal submitted. The following is an overview of what could/could not be achieved during this period.  
+  
+- [x] Data Collection and Preprocessing
+   - [x] Data cleaning
+   - [x] Graphical Analysis of data.  
+- [x] Frame based feature extraction and modelling
+  - [x] Extraction of annotated FrameNet 1.7 frames from the sentences.
+  - [x] Extraction of lexical units triggering the corresponding frames.
+  - [x] Extraction of corrseponding annotated frame elements from the sentences.
+  - [x] Extraction of lexical units triggering the corresponding frame elements.
+  - [x] Extraction of POS tags of the lexical units of the corresponding frames and frame elements.  
+- [x] Extraction of universal sentence representations.
+  - [x] Google's Universal Sentence Representation
+  - [x] BERT  
+- [x] Development of a regression model using the final embedding obtained. (Baseline)  
+- [ ] Comparison of the developed metric with other existing metrics.  
+- [ ] Using other metrics as features in the model.  
+- [x] Bug fixing and further refinement of the system.
+  - [x] Data augemtation using generation of negative samples.
+  - [x] Semi supervised data augmentation and regression model implemented.
+  - [x] Graphical analysis of the results obtained done.
+  - [x] Small bugs identified and fixed.
