@@ -7,8 +7,8 @@ This repository contains code for evaluating the semantic similarity between a s
 2. `Anaconda, Python 3.x`
 
 #### Instructions :
-1. Create an environment in your local server using the given `environment.yml` file with the following command :
-`conda env create -f environment.yml`
+1. Create an environment in your local server using the given `environment.yml` file with the following command :  
+`conda env create -f environment.yml`  
 The first line of the yml file sets the new environment's name.
 2. Activate the environment using :
 `conda activate <env_name>`
