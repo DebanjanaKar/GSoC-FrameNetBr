@@ -34,7 +34,7 @@ $ cat oov_words_en.txt | ./fasttext print-word-vectors cc.en.300.bin >> en_oov.b
 ```
 This will give a `.bin` file of the oov words.
 
-7. The above script uses Google's Universal Sentence Encoder to obtain sentence embeddings. Although the dependencies should be installed by the requirements file, in case of any problem, please install Tensorflow v.1.12 explicitly and follow the instructions given in this [link](https://tfhub.dev/google/universal-sentence-encoder-multilingual/1)
+7. The above script uses Google's Universal Sentence Encoder to obtain sentence embeddings. Although the dependencies should be installed by the requirements file, in case of any problem, please install Tensorflow v.1.12 explicitly and follow the instructions given in this [link](https://tfhub.dev/google/universal-sentence-encoder-multilingual/1).
 
 8. The script **`bert-embeddings.ipynb`** uses pretrained cased multilingual [BERT embeddings](https://github.com/google-research/bert) to generate embeddings for lexical units and sentences. The pytorch interface for BERT by Hugging Face has been used to access and experiment with the pretrained embeddings. It contains a method which maps the lexical units to the actual words in the sentences and maps with an error of < 5%. It auto-generates a resource file called `bert_embeddings.pickle` which contains all the required embeddings, ready for use.
 
