@@ -45,6 +45,7 @@ This will give a `.bin` file of the oov words.
 11. Baseline models have been experimented with in the script **`baselines.ipynb`** and semi supervised models, in the script **`iterative-learning.ipynb`** .
 
 Please run the scripts *in the order they have been presented* here.  Have a look at **`TaskChecklist.md`** to have an idea of the workflow and the tasks that were/weren't accomplished during the period.  
+  
 For a more detailed explanation of the project, please visit : https://medium.com/@debanjana.kar/frame-based-metric-for-automatic-machine-translation-evaluation-my-journey-in-gsoc-2019-5749f0d21b74?source=friends_link&sk=1eec274567ff753a9704cb785ccb1231
 
 
