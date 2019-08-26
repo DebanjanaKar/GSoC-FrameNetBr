@@ -44,6 +44,6 @@ This will give a `.bin` file of the oov words.
 
 11. Baseline models have been experimented with in the script **`baselines.ipynb`** and semi supervised models, in the script **`iterative-learning.ipynb`** .
 
-Please run the scripts in the order they have been presented here. Have a look at **`TaskChecklist.md`** to have an idea of the workflow and tasks that were/weren't accomplished during the period.
+Please run the scripts *in the order they have been presented* here.  Have a look at **`TaskChecklist.md`** to have an idea of the workflow and the tasks that were/weren't accomplished during the period.
 
 
